@@ -1,13 +1,9 @@
 import express from "express";
-import cors from "cors";
 
 import { routes } from "./routes";
 
 const app = express();
 
-app.use(
-  cors({ origin: "https://hcurriculum.vercel.app/", optionsSuccessStatus: 200 })
-);
 app.use(express.json());
 app.use(routes);
 
