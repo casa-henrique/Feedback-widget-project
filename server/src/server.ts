@@ -6,7 +6,7 @@ import { routes } from "./routes";
 const app = express();
 
 app.use(
-  cors({ origin: "https://hcurriculum-o5slgbqk6-casa-henrique.vercel.app/" })
+  cors({ origin: "https://hcurriculum.vercel.app/", optionsSuccessStatus: 200 })
 );
 app.use(express.json());
 app.use(routes);
