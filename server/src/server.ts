@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://hcurriculum.vercel.app/",
+    origin: "https://hcurriculum.vercel.app",
   })
 );
 app.use(express.json());
